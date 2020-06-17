@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Startup</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Your own stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- To move the container at the center, we need to use flex box properties in bootstrap. We can do this by using d-flex class and to move to center, we can use align-items-center. But the problem is the container class is containing only those items inside it. It does not use the full page height(you can see it by inspecting in google chrome). So it will make all the items in the conatiner at the center, not at the center of the page. to do that we use h-100 class to use it 100% height. Search vertical alignment at getbootstrap page -->
+
+  <div class="container d-flex align-items-center h-100">
+    <!-- We add row class to keep all the elements in the container in a row -->
+    <div class="row">
+      <!-- We add col-12 to use full width of the container, otherwise it was using only that part -->
+      <header class="text-center col-12">
+        <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+      </header>
+
+      <!-- To create a gap between the text and button we will create a buffer class in css -->
+      <div class="buffer"></div>
+
+      <section class="text-center col-12">
+        <hr>
+        <a href="https://mailchi.mp/2f139570513b/startup">
+          <button class="btn btn-primary btn-xl">Find out more</button>
+        </a>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+</html>

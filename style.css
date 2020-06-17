@@ -1,0 +1,54 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /* Below 5 lines are copied from "css-tricks.com/perfect-full-page-background-image/" website.
+     This will allow us to change the image size based on our screen size and a perfect full background image.
+     no-repeat means we don't wanna repeat the image
+     center will keep the image in the center whatever the page size be
+     background-size: cover means it will cover all the body of the html */
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  font-size: 3rem;
+  color: #e2dbdb;
+}
+
+.buffer{
+  height: 12rem;
+}
+
+hr{
+  border-color: #ee4b08;
+  border-width: 3px;
+  max-width: 65px;
+}
+
+.btn{
+  /* This is a bootstrap class. We want add some more features to it */
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+.btn-primary{
+  background-color: #f05f44;
+  border-color: #f05f44;
+}
+
+.btn-primary:hover{
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 4px;
+}
+
+.btn-xl{
+  /* This is not a bootstrap class */
+  padding: 1rem 2rem;
+}
